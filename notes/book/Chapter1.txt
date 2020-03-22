@@ -1,0 +1,20 @@
+Differential Privacy - "describes a promise, made by a data holder, or curator, to a data subject: 'You will not be affected, adversely or otherwise, by allowing your data to be used in any study or analysis, no matter what other studies, datasets or information sources are available'"
+
+Fundamaental Law of Information Recovery - overly accurate answers to too many questions will destroy privacy
+
+The same conclusions will be reached, independent of whether any individual opts into or opts out of the dataset.
+
+epsilon - the random bit, the 'essentially the same results', smaller has better privacy but less accurate results
+
+1.1 Privacy Preserving Data Analysis
+------------------------------------------
+-Data Cannot be Fully Anonymized and Remain Useful - removes the rich, useful info
+    -Linkage attack: match 'anonymized' records with non-anonymized data in a different dataset
+-Re-identification is not the only risk: it isn't just the certainty that the data is for a particular person, but the fact that if you know what day a neighbor visited a facility, you may be able to find out his diagnosis
+-Queries over large sets are not protective
+    -Differencing attack: 'How many people have disease Y?' & 'How many people not named X have disease Y?'
+-Query auditing is problematic
+-Summary Statistics are not Safe
+    -Reconstruction attacks <NEED MORE INFO ON THIS>
+-Ordinary Facts are not 'OK': revealing purchasing bread could reveal that someone developed diabetes (may or may not be correct, but still harmful)
+-"Just a Few": some people think it is ok to sacrifice the privacy of a few to help many, but those are often the people whose privacy is most important
